@@ -1,0 +1,1168 @@
+/* PWD  Website Homepage Stylesheet */
+
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* general body, html style */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #454545;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+  
+.homebannerBottom {
+  margin-left: 9.7em;
+  padding: 11.5em 3em 0em;
+  max-width: 1380px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.homebannerBottom:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.homebannerBottom h1{
+  line-height: 1.2em;
+  width: 60%;
+  letter-spacing: -0.02em;
+  font-size: 2.7em;
+}
+
+
+.approachParagraphs p{
+  line-height: 2em;
+  width: 100%;
+}
+
+.caseStudyDescription {
+  margin-left: 9.7em;
+  padding: 0em 3em 1em;
+  max-width: 1380px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* START OF ABOUT PAGE LAYOUT */
+.sectionOne {
+  float: left;
+  width: 60%;
+}
+
+.banner img{
+  float: right;
+  width: 40%;
+  padding: 0em 0em 1em 1em;
+}
+
+.indentList {
+  margin-left: 1.2em;
+}
+/* END OF ABOUT PAGE LAYOUT */
+
+body main {
+  width: 100%;
+  height: auto;
+}
+body main img {
+  width: 100%;
+  display: block;
+}
+body main h1 {
+  font-size: 3em;
+  font-weight: 900;
+  color: #1e1e1e;
+}
+
+.workShowcase {
+  width: 100%;
+  position: relative;
+}
+
+.workShowcase img{
+  float: left;
+  width: 100%;
+  padding-top: 0em;
+}
+
+.workCaseStudyShowcase {
+  width: 100%;
+  position: relative;
+}
+
+.workCaseStudyShowcase img{
+  float: left;
+  width: 100%;
+  padding-top: 0em;
+}
+
+
+/*------------------------start of drop-down menu------------------------*/
+.hamburger {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 3em;
+  right: 3em;
+  z-index: 10000;
+  background: transparent;
+  cursor: pointer;
+
+}
+.hamburger.is-active .hamburger--container .hamburger--bars {
+  background: white;
+}
+.hamburger.is-active .hamburger--container .hamburger--bars:before, .hamburger.is-active .hamburger--container .hamburger--bars:after {
+  background: white;
+}
+.hamburger.is-active .hamburger--container .hamburger--bars:before {
+  left: 0.25em;
+}
+.hamburger.is-active .hamburger--container .hamburger--bars:after {
+  left: -0.25em;
+}
+.hamburger .hamburger--container {
+  width: 100%;
+  padding: 0.25em;
+  position: relative;
+}
+.hamburger .hamburger--container .hamburger--bars {
+  height: 3px;
+  width: 1.5em;
+  background: #000;
+  position: absolute;
+  top: 0.9em;
+  transition: 0.3s ease;
+}
+.hamburger .hamburger--container .hamburger--bars:before, .hamburger .hamburger--container .hamburger--bars:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 1.5em;
+  background: inherit;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease;
+}
+.hamburger .hamburger--container .hamburger--bars:before {
+  top: -0.5em;
+}
+.hamburger .hamburger--container .hamburger--bars:after {
+  top: 0.5em;
+}
+
+.logo {
+  width: 35em;
+  height: 6em;
+  position: absolute;
+  top: 1em;
+  left: 3em;
+  z-index: 10000;
+  filter: invert(1);
+}
+.logo img {
+  width: 100%;
+  display: block;
+  transition: 0.3s linear 0.3s;
+}
+.logo.is-active img {
+  filter: invert(100%);
+}
+
+.fsmenu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  overflow: hidden;
+  display: none;
+}
+.fsmenu .fsmenu--container {
+  width: 0;
+  height: 100vh;
+  padding: 8em 3em 3em;
+  background: #000;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block {
+  width: 100%;
+  height: 100%;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container {
+  width: 100%;
+  height: 100%;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element {
+  width: 100%;
+  height: 25%;
+  list-style-type: none;
+  text-align: left;
+  letter-spacing: -10em;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 0.2s ease;
+  letter-spacing: -10em;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a:hover {
+  color: #737373;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span {
+  font-size: 7em;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1;
+  height: 1em;
+  display: inline-block;
+  position: relative;
+  z-index: 1002;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1003;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--scrolling-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform: translate(-20%, -100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--scrolling-text span {
+  height: 1em;
+  font-size: 8em;
+  font-weight: 900;
+  letter-spacing: -10px;
+  line-height: 1;
+  color: #1e1e1e;
+  display: inline-block;
+  margin-right: 1em;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element:hover .fsmenu--scrolling-text {
+  opacity: 1;
+  -webkit-animation: animScrollingContactTextLeft 9s linear 0s infinite;
+          animation: animScrollingContactTextLeft 9s linear 0s infinite;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img {
+  width: 0px;
+  height: 100vh;
+  padding: 8em 3em 3em;
+  position: absolute;
+  top: 0;
+  right: calc(100vw - 720px);
+  z-index: 1001;
+  font-size: 16px;
+  pointer-events: none;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img .fsmenu--img-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img .fsmenu--img-container img {
+  width: 624px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.open .fsmenu--link-img {
+  left: auto;
+  right: calc(100vw - 720px);
+  -webkit-animation: animMenuRevealImg 0.4s ease 0s forwards;
+          animation: animMenuRevealImg 0.4s ease 0s forwards;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.open .fsmenu--link-img .fsmenu--img-container img {
+  right: 0;
+  left: auto;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.is-closing .fsmenu--link-img {
+  left: 0;
+  right: auto;
+  -webkit-animation: animMenuCloseImg 0.4s ease 0s forwards;
+          animation: animMenuCloseImg 0.4s ease 0s forwards;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.is-closing .fsmenu--link-img .fsmenu--img-container img {
+  left: 0;
+  right: auto;
+}
+.fsmenu.is-active {
+  display: block;
+}
+.fsmenu.is-active .fsmenu--container {
+  -webkit-animation: animMenuReveal 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+          animation: animMenuReveal 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+}
+.fsmenu.is-active .fsmenu--container .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+  -webkit-animation: animMenuRevealLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.4s forwards;
+          animation: animMenuRevealLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.4s forwards;
+}
+.fsmenu.close-menu {
+  display: block;
+}
+.fsmenu.close-menu .fsmenu--container {
+  width: 100vw;
+  right: auto;
+  left: 0;
+  -webkit-animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards;
+          animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards;
+}
+.fsmenu.close-menu .fsmenu--container .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+  left: auto;
+  right: 0;
+  background: black;
+  -webkit-animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+          animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+}
+
+@-webkit-keyframes animMenuReveal {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
+@keyframes animMenuReveal {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+@-webkit-keyframes animMenuRevealLinks {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes animMenuRevealLinks {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@-webkit-keyframes animMenuClose {
+  0% {
+    width: 100vw;
+    padding: 8em 3em 3em;
+  }
+  100% {
+    width: 0vw;
+    padding: 8em 0 0;
+  }
+}
+@keyframes animMenuClose {
+  0% {
+    width: 100vw;
+    padding: 8em 3em 3em;
+  }
+  100% {
+    width: 0vw;
+    padding: 8em 0 0;
+  }
+}
+@-webkit-keyframes animMenuCloseLinks {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 110%;
+  }
+}
+@keyframes animMenuCloseLinks {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 110%;
+  }
+}
+@-webkit-keyframes animMenuRevealImg {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 720px;
+  }
+}
+@keyframes animMenuRevealImg {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 720px;
+  }
+}
+@-webkit-keyframes animMenuCloseImg {
+  0% {
+    width: 720px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes animMenuCloseImg {
+  0% {
+    width: 720px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes animScrollingContactTextLeft {
+  0% {
+    transform: translate(-20%, -100%);
+  }
+  100% {
+    transform: translate(-40%, -100%);
+  }
+}
+@keyframes animScrollingContactTextLeft {
+  0% {
+    transform: translate(-20%, -100%);
+  }
+  100% {
+    transform: translate(-40%, -100%);
+  }
+}
+
+/* end of drop down menu code */
+
+/* beginning of slideshow code */
+
+/* Slideshow container */
+.slideshow {
+  width: 100%;
+  padding: 8em -3em -3em;
+}
+
+.slideshow-container{
+  width: 100%;
+  padding: 8em -3em -3em;
+
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+
+
+/* The dots/bullets/indicators */
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* end of slideshow code */
+
+/*-------------------------------Footer code-------------------------------*/
+
+
+footer{
+  width:100%;
+  position:absolute;
+
+  left:0;
+  background-color:blue;
+
+}
+
+.site-footer{
+  background-color:black;
+  /*padding:45px 0 20px;*/
+  padding: 45px 3em 20px;
+
+  max-height: 10vh;
+
+  font-size:16px;
+  line-height:24px;
+  color:#737373;
+  width: 100%;
+  box-shadow: 0 50vh 0 50vh #000;
+
+}
+.site-footer hr{
+  border-top-color:#bbb;
+  opacity:0.5;
+}
+.site-footer hr.small{
+  margin:20px 0
+}
+.site-footer h6{
+  color:#fff;
+  font-size:25px;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a{
+  color:white;
+}
+.site-footer a:hover{
+  color: #fff;
+  text-decoration:none;
+}
+.footer-links{
+  padding-left:0;
+  list-style:none;
+}
+.footer-links li{
+  display:block;
+}
+.footer-links a{
+  color:#737373;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+  color:#737373;
+  text-decoration:none;
+}
+.footer-links.inline li{
+  display:inline-block;
+}
+.site-footer .social-icons{
+  text-align:left;
+}
+.site-footer .social-icons a{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d;
+}
+.copyright-text{
+  margin:0
+}
+@media (max-width:991px){
+  .site-footer [class^=col-]{
+    margin-bottom:30px;
+  }
+}
+@media (max-width:767px){
+  .site-footer{
+    padding-bottom:0;
+  }
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center;
+  }
+}
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+}
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px;
+}
+.social-icons li.title{
+  margin-right:15px;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px;
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe;
+}
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover{
+  background-color:#3b5998;
+}
+.social-icons a.twitter:hover{
+  background-color:#00aced;
+}
+.social-icons a.linkedin:hover{
+  background-color:#007bb6;
+}
+.social-icons a.dribbble:hover{
+  background-color:#ea4c89;
+}
+.social-icons a.behance:hover{
+  background-color:#1769ff;
+}
+.social-icons a.instagram:hover {
+  background: #125688;
+}
+
+.tiktok{
+  width: 20%;
+}
+.social-icons a.tiktok:hover {
+  background: #00f2ea;
+  background-image: url(../Images/SM-ICONS/tiktok.png);
+}
+
+
+@media (max-width:767px){
+  .social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600;
+  }
+}
+
+/*--------------------------BACK-TO-TOP BUTTON CODE------------------------------*/
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  background: black;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+  opacity: 60%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.back-to-top-icon {
+  width: 1rem;
+  height: 1rem;
+  color:white;
+}
+
+.progress-bar {
+  height: 1rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* ----------------END OF BACK-TO-TOP BUTTON CODE------------------------*/
+
+
+/* START OF ABOUT WORK LAYOUT */
+.workColumnLeft {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.workColumnRight {
+  float: right;
+  width: 50%;
+  position: relative;
+
+}
+
+.bottomLeft {
+  position: absolute;
+  bottom: 3px;
+  left: 16px;
+  font-size: 18px;
+}
+
+
+/* END OF ABOUT PAGE LAYOUT */
+
+
+/* ----------------START OF NEW CONTACT PAGE CODE------------------------*/
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #737373;
+}
+
+/* Style the container/contact section */
+/*.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}*/
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  /*width: 50%;*/
+  /*margin-top: 3px;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+    .workColumnLeft {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+
+  .workColumnRight {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #454545;
+    letter-spacing: 0.2px;
+    position: relative;
+  }
+
+  .homebannerBottom {
+    margin-left: 6.9em;
+    padding: 8.5em 3em 0em;
+    max-width: 1380px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+
+  .caseStudyDescription {
+    margin-left: 6.9em;
+    padding: 0em 3em 0em;
+    max-width: 1380px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+  
+  .homebannerBottom:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .homebannerBottom h1{
+    line-height: 1.2em;
+    width: 60%;
+    letter-spacing: -0.02em;
+    font-size: 2em;
+  }
+  
+  
+  .approachParagraphs p{
+    line-height: 2em;
+    width: 100%;
+  }
+
+  .logo {
+    width: 25em;
+    height: 6em;
+    position: absolute;
+    top: 1em;
+    left: 3em;
+    z-index: 10000;
+    filter: invert(1);
+  }
+
+  body main h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #1e1e1e;
+  }
+
+}
+
+@media only screen and (max-width: 590px) {
+
+  .banner img{
+    float: right;
+    width: 100%;
+    padding: 0em 0em 1em 1em;
+  }
+  
+  .sectionOne {
+    float: left;
+    width: 100%;
+  }
+  
+  .fsmenu {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+  }
+  .fsmenu .fsmenu--container {
+    width: 0;
+    height: 100vh;
+    padding: 18em 2em 3em;
+    background: #000;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block {
+    width: 100%;
+    height: 100%;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container {
+    width: 100%;
+    height: 100%;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element {
+    width: 100%;
+    height: 25%;
+    list-style-type: none;
+    text-align: left;
+    letter-spacing: -10em;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.2s ease;
+    letter-spacing: -10em;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a:hover {
+    color: #737373;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span {
+    font-size: 3.8em;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 1;
+    height: 1em;
+    display: inline-block;
+    position: relative;
+    z-index: 1002;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1003;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--scrolling-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translate(-20%, -100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--scrolling-text span {
+    height: 1em;
+    font-size: 8em;
+    font-weight: 900;
+    letter-spacing: -10px;
+    line-height: 1;
+    color: #1e1e1e;
+    display: inline-block;
+    margin-right: 1em;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element:hover .fsmenu--scrolling-text {
+    opacity: 1;
+    -webkit-animation: animScrollingContactTextLeft 9s linear 0s infinite;
+            animation: animScrollingContactTextLeft 9s linear 0s infinite;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img {
+    width: 0px;
+    height: 100vh;
+    padding: 8em 3em 3em;
+    position: absolute;
+    top: 0;
+    right: calc(100vw - 720px);
+    z-index: 1001;
+    font-size: 16px;
+    pointer-events: none;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img .fsmenu--img-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img .fsmenu--img-container img {
+    width: 624px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.open .fsmenu--link-img {
+    left: auto;
+    right: calc(100vw - 720px);
+    -webkit-animation: animMenuRevealImg 0.4s ease 0s forwards;
+            animation: animMenuRevealImg 0.4s ease 0s forwards;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.open .fsmenu--link-img .fsmenu--img-container img {
+    right: 0;
+    left: auto;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.is-closing .fsmenu--link-img {
+    left: 0;
+    right: auto;
+    -webkit-animation: animMenuCloseImg 0.4s ease 0s forwards;
+            animation: animMenuCloseImg 0.4s ease 0s forwards;
+  }
+  .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.is-closing .fsmenu--link-img .fsmenu--img-container img {
+    left: 0;
+    right: auto;
+  }
+  .fsmenu.is-active {
+    display: block;
+  }
+  .fsmenu.is-active .fsmenu--container {
+    -webkit-animation: animMenuReveal 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+            animation: animMenuReveal 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+  }
+  .fsmenu.is-active .fsmenu--container .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+    -webkit-animation: animMenuRevealLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.4s forwards;
+            animation: animMenuRevealLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.4s forwards;
+  }
+  .fsmenu.close-menu {
+    display: block;
+  }
+  .fsmenu.close-menu .fsmenu--container {
+    width: 100vw;
+    right: auto;
+    left: 0;
+    -webkit-animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards;
+            animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards;
+  }
+  .fsmenu.close-menu .fsmenu--container .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+    left: auto;
+    right: 0;
+    background: black;
+    -webkit-animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+            animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+  }
+}
+
+/* SMALLEST SCREEN SIZE */
+
+@media only screen and (max-width: 555px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #454545;
+    letter-spacing: 0.2px;
+    position: relative;
+  }
+
+  .homebannerBottom {
+    margin-left: 2.8em;
+    padding: 6.6em 3em 0em;
+    max-width: 1440px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+
+  .caseStudyDescription {
+    margin-left: 2.8em;
+    padding: 0em 3em 0em;
+    max-width: 1440px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+  
+  .homebannerBottom:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .homebannerBottom h1{
+    line-height: 1.4em;
+    width: 60%;
+    letter-spacing: -0.02em;
+    font-size: 1.6em;
+  }
+  
+  .approachParagraphs p{
+    line-height: 2em;
+    width: 100%;
+  }
+
+  .logo {
+    width: 19em;
+    height: 6em;
+    position: absolute;
+    top: 0.8em;
+    left: 0.55em;
+    z-index: 10000;
+    filter: invert(1);
+  }
+
+  body main h1 {
+    font-size: 2em;
+    font-weight: 900;
+    color: #1e1e1e;
+  }
+
+  .hamburger {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 2.4em;
+    right: 0.5em;
+    z-index: 10000;
+    background: transparent;
+    cursor: pointer;
+  
+  }
+
+  .workColumnLeft {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+
+  .workColumnRight {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+
+  
+}
+
+/* ----------------END OF NEW CONTACT PAGE CODE------------------------*/
