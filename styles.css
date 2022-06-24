@@ -19,6 +19,156 @@ body, html {
   position: relative;
 }
 
+/* caption of work images */
+
+/* windows 8 tiles */
+#mainwrapper{
+  margin:0 auto
+}
+#mainwrapper #tools{
+  text-align:center;
+  font-size:25px;
+  margin-bottom:10px;
+}
+#mainwrapper .box .title{
+	text-align:left;
+	padding:8px 0px 0px 8px;
+	font-weight:bold;
+}
+#mainwrapper .box p{
+	margin: 3px 0px 0px 0px;
+	padding:0px 0px 8px 8px;
+	text-align:left;
+}
+#mainwrapper .box .simple-caption p{
+  display:none;
+}
+#mainwrapper {
+	font: 10pt normal Arial, sans-serif;
+	height: auto;
+	text-align: center;
+	width: 960px;
+}
+
+/* Image Box Style */
+#mainwrapper .box {
+	cursor: pointer;
+	height: 182px;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	width: 310px;
+}
+#mainwrapper .box #bg-block{
+  position: absolute;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  background-position:0px 0px;
+  width:100%;
+  height:100%;
+	left: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+  
+}
+
+
+/* Caption Common Style */
+#mainwrapper .box .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	left: 0;
+}
+
+/** Caption 1: Simple **/
+#mainwrapper .box .simple-caption {
+	height: 182px;
+	width: 310px;
+	display: block;
+	bottom: -182px;
+	text-align: center;
+  
+  -moz-transform: translateY(-30%);
+	-o-transform: translateY(-30%);
+	-webkit-transform: translateY(-30%);
+	opacity: 1;
+	transform: translateY(-30%);
+}
+#mainwrapper .box:hover .simple-caption p{
+  display:block;
+}
+/** Simple Caption :hover Behaviour **/
+#mainwrapper .box:hover .simple-caption {
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	opacity: 1;
+	transform: translateY(-100%);
+}
+#mainwrapper .box:hover .scale-caption.title, #mainwrapper .box:hover .scale-caption p {
+	-moz-transform: translateX(200px);
+	-o-transform: translateX(200px);
+	-webkit-transform: translateX(200px);
+	transform: translateX(200px);
+}
+
+#mainwrapper .box .cap1{
+      background-color: rgba(26, 167, 88, 0.8);
+}
+#mainwrapper .box .cap2{
+      background-color: #d5582c;
+}
+#mainwrapper .box .cap3{
+      background-color: rgba(46, 123, 204,0.8);
+}
+#mainwrapper .box .cap4{
+      background-color: rgba(46, 123, 204,0.8);
+}
+#mainwrapper .box .cap5{
+      background-color: #009fb2;
+}
+#mainwrapper .box .cap6{
+      background-color: rgba(26, 167, 88, 0.8);
+}
+
+#mainwrapper .box .bg-block-1{
+  background-image:url("http://i2.wp.com/thezinx.com/wp-content/uploads/knock-keyhole.png?fit=310%2C9999");
+  background-color:rgba(26, 167, 88, 1);
+}
+#mainwrapper .box .bg-block-2{
+  background-image:url("http://i2.wp.com/thezinx.com/wp-content/uploads/knock-keyhole.png?fit=310%2C9999");
+  background-color:#d5582c;
+}
+#mainwrapper .box .bg-block-3{
+  background-image:url("http://i2.wp.com/thezinx.com/wp-content/uploads/knock-keyhole.png?fit=310%2C9999");
+  background-color:rgba(46, 123, 204,1);
+}
+#mainwrapper .box .bg-block-4{
+  background-image:url("http://i2.wp.com/thezinx.com/wp-content/uploads/knock-keyhole.png?fit=310%2C9999");
+  background-color:rgba(46, 123, 204,1);
+}
+#mainwrapper .box .bg-block-5{
+  background-image:url("http://i2.wp.com/thezinx.com/wp-content/uploads/knock-keyhole.png?fit=310%2C9999");
+  background-color:#009fb2;
+}
+#mainwrapper .box .bg-block-6{
+  background-image:url("http://i2.wp.com/thezinx.com/wp-content/uploads/knock-keyhole.png?fit=310%2C9999");
+  background-color:rgba(26, 167, 88, 1);
+}
+
+/* end of new work section */
+
   
 .homebannerBottom {
   margin-left: 9.7em;

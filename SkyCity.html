@@ -33,58 +33,56 @@
     <body id="top"> <!-- Opening body tag; displays content in the browser -->
         
         <!-- Click-able PWD logo in header -->    
-        <div class="logo">
-            <!--<img src="../Images/pwd-logo4-whiteTextNoBackground.png" alt="Patrick Watson Design (PWD) logo" class="pwdLogo">-->
-            <a href="index.html">
-                <img src="Images/PWD-wordmark-whiteTextNoBackground-finalProfRevision.png" />
+        <div class="logo" aria-label="PWD logo div">
+            <a href="index.html"> <!-- being user back to homepage if they click PWD logo -->
+                <img src="Images/PWD-wordmark-whiteTextNoBackground-finalProfRevision.png" alt="PWD wordmark logo"/>
             </a>
         </div>
 
         <!-- Click-able hamburger drop-down menu --> 
-        <div class="hamburger">
-        <div class="hamburger--container">
-            <div class="hamburger--bars">
-                
+        <div class="hamburger" aria-label="outer hamburger menu div">
+            <div class="hamburger--container" aria-label="inner hamburger menu div">
+                <div class="hamburger--bars" aria-label="hamburger menu bars div"></div>
             </div>
         </div>
-        </div>
+
+        <!-- ** NOTE: THE FOLLOWING DROP-DOWN MENU CODE (html & css) WAS REFERENCED BY THE FOLLOWING LINK: https://codepen.io/timokern/pen/XYoPmB ** -->
         
-        <!-- ================================================================= -->
         <!-- START OF DROP-DOWN MENU -->
-        <div class="fsmenu">
-            <div class="fsmenu--container">
-                <div class="fsmenu--text-block">
-                    <div class="fsmenu--text-container">
+        <div class="fsmenu" aria-label="outer slide-in menu div">
+            <div class="fsmenu--container" aria-label="slide-in menu container div">
+                <div class="fsmenu--text-block" aria-label="slide-in menu text block div">
+                    <div class="fsmenu--text-container" aria-label="slide-in menu text container div">
                         <ul class="fsmenu--list">
-                            <li class="fsmenu--list-element">
+                            <li class="fsmenu--list-element"> <!-- first option in menu: Work page -->
                                 <a href="work.html">
                                     <span>Work</span>
                                 </a>
-                                <div class="fsmenu--scrolling-text">
+                                <div class="fsmenu--scrolling-text" aria-label="slide-in menu scrolling text div">
                                     <span>Work</span><span>Work</span><span>Work</span><span>Work</span><span>Work</span>
                                 </div>
                             </li>
-                            <li class="fsmenu--list-element">
+                            <li class="fsmenu--list-element"> <!-- second option in menu: About page -->
                                 <a href="about.html">
                                     <span>About</span>
                                 </a>
-                                <div class="fsmenu--scrolling-text">
+                                <div class="fsmenu--scrolling-text" aria-label="slide-in menu scrolling text div">
                                     <span>About</span><span>About</span><span>About</span><span>About</span><span>About</span>
                                 </div>
                             </li>
-                            <li class="fsmenu--list-element">
+                            <li class="fsmenu--list-element"> <!-- third option in menu: Process page -->
                                 <a href="approach.html">
-                                    <span>Approach</span>
+                                    <span>Process</span>
                                 </a>
-                                <div class="fsmenu--scrolling-text">
-                                    <span>Approach</span><span>Approach</span><span>Approach</span><span>Approach</span><span>Approach</span>
+                                <div class="fsmenu--scrolling-text" aria-label="slide-in menu scrolling text div">
+                                    <span>Process</span><span>Process</span><span>Process</span><span>Process</span><span>Process</span>
                                 </div>
                             </li>
-                            <li class="fsmenu--list-element">
+                            <li class="fsmenu--list-element"> <!-- fourth option in menu: Contact page -->
                                 <a href="contact.html">
                                     <span>Contact</span>
                                 </a>
-                                <div class="fsmenu--scrolling-text">
+                                <div class="fsmenu--scrolling-text" aria-label="slide-in menu scrolling text div">
                                     <span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span>
                                 </div>
                             </li>
@@ -94,7 +92,6 @@
             </div>
         </div>
         <!-- END OF DROP-DOWN MENU -->
-        <!-- ================================================================= -->
         
         <!-- ================================================================= -->
         <!-- START OF AUTOMATIC SLIDESHOW GALLERY -->
@@ -136,64 +133,56 @@
                 dots[slideIndex-1].className += " active";
                 }
             </script>
-    
+
+            <!-- NOTE: THE FOLLOWING AUTOMATIC IMAGE SLIDESHOW REFERED TO THE FOLLOWING LINK: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
     
             <section class="slideshow">
-                <div class="slideshow-container">
+                <div class="slideshow-container" aria-label="slideshow container div">
     
-                <div class="mySlides fade">
-                  <div class="numbertext"></div>
-                  <img src="Images/SkyCity-Wordmark-whiteTextGreyBackground.png" style="width:100%">
-                  <div class="text"></div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
-                    <img src="Images/SkyCity-Wordmark-greyTextWhiteBackground.png" style="width:100%">
-                    <div class="text"></div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
+                <div class="mySlides fade" aria-label="slideshow fade div">
+                    <div class="numbertext" aria-label="slideshow number text div"></div>
                     <img src="Images/SkyCity-Mockup-Slideshow.png" style="width:100%">
-                    <div class="text"></div>
                 </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
+                <div class="mySlides fade" aria-label="slideshow fade div">
+                  <div class="numbertext" aria-label="slideshow number text div"></div>
+                  <img src="Images/SkyCity-Wordmark-whiteTextGreyBackground.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade" aria-label="slideshow fade div">
+                    <div class="numbertext" aria-label="slideshow number text div"></div>
+                    <img src="Images/SkyCity-Wordmark-greyTextWhiteBackground.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade" aria-label="slideshow fade div">
+                    <div class="numbertext" aria-label="slideshow number text div"></div>
                     <img src="Images/SkyCity-Mockup-Instagram-slideShow.png" style="width:100%">
-                    <div class="text"></div>
                 </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
+                <div class="mySlides fade" aria-label="slideshow fade div">
+                    <div class="numbertext" aria-label="slideshow number text div"></div>
                     <img src="Images/skycity-messaging-whiteTextGreyBackground.png" style="width:100%">
-                    <div class="text"></div>
                 </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
+                <div class="mySlides fade" aria-label="slideshow fade div">
+                    <div class="numbertext" aria-label="slideshow number text div"></div>
                     <img src="Images/skycity-messaging-greyTextWhiteBackground.png" style="width:100%">
-                    <div class="text"></div>
                 </div>
                 
-                <div class="mySlides fade">
-                  <div class="numbertext"></div>
+                <div class="mySlides fade" aria-label="slideshow fade div">
+                  <div class="numbertext" aria-label="slideshow number text div"></div>
                   <img src="Images/SkyCity-responsive-whiteTextGreyBackground.png" style="width:100%">
-                  <div class="text"></div>
                 </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
+                <div class="mySlides fade" aria-label="slideshow fade div">
+                    <div class="numbertext" aria-label="slideshow number text div"></div>
                     <img src="Images/SkyCity-responsive-greyTextWhiteBackground.png" style="width:100%">
-                    <div class="text"></div>
                 </div>
-                
                 
                 </div>
                 <br>
                 
-                <div style="text-align:center">
+                <div style="text-align:center" aria-label="text align div">
                   <span class="dot"></span> 
                   <span class="dot"></span> 
                   <span class="dot"></span> 
@@ -283,6 +272,12 @@
             
         </section>
 
+        <section class="caseStudyDescription">
+            <p>
+                A wordmark logo, responsive icon and advertisement was created for this project. 
+            </p>
+        </section>
+
         <section class="workCaseStudyShowcase">
             <img src="Images/SkyCity-Mockup-Ad2.png" alt="SkyCity Ad"> 
             <img src="Images/SkyCity-Mockup-InstagramPage.png" alt="SkyCity Instagram">      
@@ -301,7 +296,7 @@
             
         </section>
 
-        <div class="workShowcase">
+        <div class="workShowcase" aria-label="work showcase div">
 
             <section class="workColumnRight"> <!-- parent container of <img> element --> 
                 <img src="Images/SkyCity-responsive-greyTextWhiteBackground.png" alt="SkyCity Logo">
@@ -329,7 +324,7 @@
             </h2>
         </section>
 
-        <div class="workShowcase">
+        <div class="workShowcase" aria-label="work showcase div">
             <section class="workColumnLeft"> <!-- parent container of <img> element --> 
                 <a href="Pellino.html">
                     <img src="Images/Pellino-Responsive-whiteTextRedBackground.png" alt="Pellino Logo">
@@ -359,32 +354,24 @@
         <!-- End of MANUAL SCROLL GALLERY -->
         <!-- ================================================================= -->
 
+        <!-- End of MANUAL SCROLL GALLERY -->
         <section class="bottomOfIndexPage">
             <p> <!-- Paragraph closing tag -->       
-                . <!-- button to go back to top -->
-                
+                &emsp;
             </p> <!-- Paragraph closing tag -->
         </section>
 
     <!-- ================================================================= -->
     <!-- Start of FOOTER -->
     <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
+        <div class="container" aria-label="footer container div">
+          <div class="row" aria-label="footer row div">
+            <div class="col-sm-12 col-md-6" aria-label="footer column div">
                 <h6>Let's talk about you</h6>
                 <p> <!-- Paragraph closing tag -->       
                     <a href="contact.html">Get in touch</a> <!-- button to go back to top -->
                 </p> <!-- Paragraph closing tag -->
             </div>
-  
-            <!--<div class="col-xs-6 col-md-3">
-              <h6>quick links</h6>
-              <ul class="footer-links">
-                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">cookie policy</a></li>
-                <li><a href="http://scanfcode.com/privacy-policy/">privacy notice</a></li>
-              </ul>
-            </div>-->
           </div>
           <hr>
         </div>
@@ -394,26 +381,18 @@
               <p class="copyright-text">&copy; PWD 2022</p>
             </div>
   
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12" aria-label="footer container div">
               <ul class="social-icons">
-                <!--<li><a class="instagram" href="https://www.instagram.com/pwdagency/" target="_blank"><i class="fa fa-instagram"></i></a></li>-->    
-
                 <li><a class="linkedin" href="https://www.linkedin.com/in/patrickrobertwatson/" target="_blank"><i class="fa fa-linkedin"></i></a></li>   
-
-                <!--<li><a class="behance" href="https://www.behance.net/patrickwatson3" target="_blank"><i class="fa fa-behance"></i></a></li>-->
-
-                <!--<li><a class="tiktok" href="https://www.tiktok.com/@pwdagency" target="_blank"><i class="fa fa-tiktok"></i></a></li>-->
-
               </ul>
             </div>
           </div>
         </div>
     </footer>
     <!-- End of FOOTER -->
-    <!-- ================================================================= -->
-        <!-- ================================================================= -->
+
         <!-- START OF BACK-TO-TOP BUTTON -->
-        <div class="progress-bar">
+        <div class="progress-bar" aria-label="back to top div">
             <button class="back-to-top hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
@@ -462,7 +441,5 @@
             <!-- END OF BACK-TO-TOP BUTTON -->
             <!-- ================================================================= -->
     
-
 </body> <!-- Closing body tag -->
-
 </html> <!-- closing html tag -->

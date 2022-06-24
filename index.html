@@ -1,3 +1,4 @@
+<!-- PWD WEBSITE -->
 <!-- Index (Homepage) -->
 
 <!DOCTYPE html> <!-- doctype declaration -->
@@ -11,7 +12,7 @@
         <meta charset="UTF-8"> <!-- largest character set -->
         <meta name="author" content="Patrick Watson Design"> <!-- one example of a named meta -->
         <!--responsive web design - scale to screen sizes-->
-        <meta name="description" content="Patrick Watson Design (PWD) is a graphic design agency offering logo, brand identity, and website design services to start-up companies.">
+        <meta name="description" content="Patrick Watson Design (PWD) is a graphic design agency offering logo and brand identity design services to start-up companies.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,61 +31,59 @@
     <!-- ================================================================= -->
     <!-- START OF BODY -->
 
-    <body id="top"> <!-- Opening body tag; displays content in the browser -->
+    <body id="top"> <!-- Opening body tag -->
         
         <!-- Click-able PWD logo in header -->    
-        <div class="logo">
-            <!--<img src="../Images/pwd-logo4-whiteTextNoBackground.png" alt="Patrick Watson Design (PWD) logo" class="pwdLogo">-->
-            <a href="index.html">
-                <img src="Images/PWD-wordmark-whiteTextNoBackground-finalProfRevision.png" />
+        <div class="logo" aria-label="PWD logo div">
+            <a href="index.html"> <!-- being user back to homepage if they click PWD logo -->
+                <img src="Images/PWD-wordmark-whiteTextNoBackground-finalProfRevision.png" alt="PWD wordmark logo"/>
             </a>
         </div>
 
         <!-- Click-able hamburger drop-down menu --> 
-        <div class="hamburger">
-        <div class="hamburger--container">
-            <div class="hamburger--bars">
-                
+        <div class="hamburger" aria-label="outer hamburger menu div">
+            <div class="hamburger--container" aria-label="inner hamburger menu div">
+                <div class="hamburger--bars" aria-label="hamburger menu bars div"></div>
             </div>
         </div>
-        </div>
         
-        <!-- ================================================================= -->
+        <!-- ** NOTE: THE FOLLOWING DROP-DOWN MENU CODE (html & css) WAS REFERENCED BY THE FOLLOWING LINK: https://codepen.io/timokern/pen/XYoPmB ** -->
+
         <!-- START OF DROP-DOWN MENU -->
-        <div class="fsmenu">
-            <div class="fsmenu--container">
-                <div class="fsmenu--text-block">
-                    <div class="fsmenu--text-container">
+        <div class="fsmenu" aria-label="outer slide-in menu div">
+            <div class="fsmenu--container" aria-label="slide-in menu container div">
+                <div class="fsmenu--text-block" aria-label="slide-in menu text block div">
+                    <div class="fsmenu--text-container" aria-label="slide-in menu text container div">
                         <ul class="fsmenu--list">
-                            <li class="fsmenu--list-element">
+                            <li class="fsmenu--list-element"> <!-- first option in menu: Work page -->
                                 <a href="work.html">
                                     <span>Work</span>
                                 </a>
-                                <div class="fsmenu--scrolling-text">
+                                <div class="fsmenu--scrolling-text" aria-label="slide-in menu scrolling text div">
                                     <span>Work</span><span>Work</span><span>Work</span><span>Work</span><span>Work</span>
                                 </div>
                             </li>
-                            <li class="fsmenu--list-element">
+                            <li class="fsmenu--list-element"> <!-- second option in menu: About page -->
                                 <a href="about.html">
                                     <span>About</span>
                                 </a>
-                                <div class="fsmenu--scrolling-text">
+                                <div class="fsmenu--scrolling-text" aria-label="slide-in menu scrolling text div">
                                     <span>About</span><span>About</span><span>About</span><span>About</span><span>About</span>
                                 </div>
                             </li>
-                            <li class="fsmenu--list-element">
+                            <li class="fsmenu--list-element"> <!-- third option in menu: Process page -->
                                 <a href="approach.html">
-                                    <span>Approach</span>
+                                    <span>Process</span>
                                 </a>
-                                <div class="fsmenu--scrolling-text">
-                                    <span>Approach</span><span>Approach</span><span>Approach</span><span>Approach</span><span>Approach</span>
+                                <div class="fsmenu--scrolling-text" aria-label="slide-in menu scrolling text div">
+                                    <span>Process</span><span>Process</span><span>Process</span><span>Process</span><span>Process</span>
                                 </div>
                             </li>
-                            <li class="fsmenu--list-element">
+                            <li class="fsmenu--list-element"> <!-- fourth option in menu: Contact page -->
                                 <a href="contact.html">
                                     <span>Contact</span>
                                 </a>
-                                <div class="fsmenu--scrolling-text">
+                                <div class="fsmenu--scrolling-text" aria-label="slide-in menu scrolling text div">
                                     <span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span>
                                 </div>
                             </li>
@@ -94,18 +93,17 @@
             </div>
         </div>
         <!-- END OF DROP-DOWN MENU -->
-        <!-- ================================================================= -->
         
-        <!-- ================================================================= -->
         <!-- START OF AUTOMATIC SLIDESHOW GALLERY -->
         <main> <!-- beginning of main section -->
         <!-- PWD Mission Statement --> 
         <!-- PWD WHAT WE DO STATEMENT -->
             <section class="homebannerBottom">
-                <h1>Logos,</br> Brand Identities,</br> Websites</br> for Startups.</h1>
+                <h1>Logos &<br> Brand Identities.</h1>
                 <!--<h1>logos,</br> brand identities,</br> websites</br></h1>-->
             </section>
 
+            <!-- start of slideshow javascript -->
             <script>
                 var slideIndex = 1;
                 showSlides(slideIndex);
@@ -136,73 +134,75 @@
                 dots[slideIndex-1].className += " active";
                 }
             </script>
+            <!-- end of slideshow javascript -->
     
             
+            <!-- NOTE: THE FOLLOWING AUTOMATIC IMAGE SLIDESHOW REFERED TO THE FOLLOWING LINK: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
             <!-- MAIN SLIDESHOW OF ALL WORK  -->
             <section class="slideshow">
-                <div class="slideshow-container">
-    
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 6</div>
+                <div class="slideshow-container" aria-label="slideshow container div">
+                    <div class="mySlides fade" aria-label="slideshow fade div">
+                        <div class="numbertext" aria-label="slideshow numbers div">1 / 7</div>
                         <a href="Guard.html">
-                            <img src="Images/Guard-Mockup-Ad-LOWRES.png" style="width:100%">
+                            <img src="Images/Guard-Mockup-Ad-LOWRES.png" style="width:100%" alt="Guard Cybersecurity Advertisement mockup">
                         </a>
-    
-                        <div class="text">Guard CyberSecurity</div>
                     </div>
                     
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 6</div>
+                    <div class="mySlides fade" aria-label="slideshow fade div">
+                        <div class="numbertext" aria-label="slideshow numbers div">2 / 7</div>
                         <a href="Anna.html">
-                        <img src="Images/Anna-mockupBusStop-full-V2.jpg" style="width:100%">
+                        <img src="Images/Anna-mockupBusStop-full-V2.jpg" style="width:100%" alt="Anna Notes Advertisement mockup">
                         </a>
-                        <div class="text">Anna Notes</div>
                     </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 6</div>
+                    <div class="mySlides fade" aria-label="slideshow fade div">
+                        <div class="numbertext" aria-label="slideshow numbers div">3 / 7</div>
                         <a href="Lola.html">
-                        <img src="Images/Lola-box-mockup-15-chai-green-chaiBackgroundV2.jpg" style="width:100%">
+                        <img src="Images/Lola-box-mockup-15-chai-green-chaiBackgroundV2.jpg" style="width:100%" alt="Lola Tea box mockup">
                         </a>
-                        <div class="text">Lola Tea</div>
+                    </div>
+
+                    <div class="mySlides fade" aria-label="slideshow fade div">
+                        <div class="numbertext" aria-label="slideshow numbers div">4 / 7</div>
+                        <a href="SkyCity.html">
+                            <img src="Images/SkyCity-Mockup-AdLOWRES.png" style="width:100%" alt="SkyCity Software advertisement mockup">
+                        </a>
                     </div>
                     
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 6</div>
+                    <div class="mySlides fade" aria-label="slideshow fade div">
+                        <div class="numbertext" aria-label="slideshow numbers div">5 / 7</div>
                         <a href="Express.html">
-                        <img src="Images/Express-Mockup-TruckLOWRES.png" style="width:100%">
+                        <img src="Images/Express-Mockup-TruckLOWRES.png" style="width:100%" alt="Export eCommerce truck mockup"> 
                         </a>
-                        <div class="text">Express eCommerce</div>
                     </div>
         
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 6</div>
-                        <a href="SkyCity.html">
-                            <img src="Images/SkyCity-Mockup-AdLOWRES.png" style="width:100%">
-                        </a>
-                        <div class="text">SkyCity Cloud Software</div>
-                    </div>
-        
-                    <div class="mySlides fade">
-                        <div class="numbertext">6 / 6</div>
+                    <div class="mySlides fade" aria-label="slideshow fade div">
+                        <div class="numbertext" aria-label="slideshow numbers div">6 / 7</div>
                         <a href="Pellino.html">
-                            <img src="Images/Pellino-BoxMockup-V1-B.png" style="width:100%">
+                            <img src="Images/Pellino-BoxMockup-V1-B.png" style="width:100%" alt="Pellino Pasta box mockup">
                         </a>
-                        <div class="text">Pellino Pasta</div>
+                    </div>
+
+                    <div class="mySlides fade" aria-label="slideshow fade div">
+                        <div class="numbertext" aria-label="slideshow numbers div">7 / 7</div>
+                        <a href="arrow.html">
+                            <img src="Images/Arrow-BillboardAd.jpg" style="width:100%" alt="Arrow ad">
+                        </a>
                     </div>
                 </div>
-                <br>
-                
-                <div style="text-align:center">
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span>
-                  <span class="dot"></span>  
-    
+              
+                <!-- transition the images in the slideshow -->
+                <div style="text-align:center" aria-label="slideshow dot transition div">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span>  
+                    <span class="dot"></span> 
                 </div>
                 
+                <!-- slideshow javascript -->
                 <script>
                     var slideIndex = 0;
                     showSlides();
@@ -225,16 +225,6 @@
                     }
                 </script>
             </section>
-            <!-- END OF SLIDESHOW OF MAIN WORK -->
-
-            <!-- BEGINNING OF LOLA MAIN PAGE SLIDESHOW -->
-
-
-
-            <!-- END OF LOLA MAIN PAGE SLIDESHOW -->
-
-        <!-- END OF AUTOMATIC SLIDESHOW GALLERY -->
-        <!-- ================================================================= -->
         </main> <!-- end of main section -->
 
 
@@ -276,118 +266,96 @@
             });
         </script>
 
-        <!-- ================================================================= -->
         <!-- Start of MANUAL SCROLL GALLERY -->
         <section class="workShowcase">
-
             <figure>
                 <a href="Guard.html">
                     <img src="Images/GUARD-Wordmark-blackTextBlueBackground.png" alt="Guard CyberSecurity Logo"> 
                 </a>
-                <figcaption>Guard CyberSecurity</figcaption>
             </figure>
 
             <figure>
                 <a href="Anna.html">
                     <img src="Images/Anna2-whiteTextOrangeBackground.png" alt="Anna wordmark Logo">  
                 </a> 
-                <figcaption>Anna Notes</figcaption>
             </figure> 
 
             <figure>
                 <a href="Lola.html">
                     <img src="Images/Lola-wordmark-whiteTextGreenbackgroundV2.png" alt="Lola Logo">
                 </a>
-                <figcaption>Lola Tea</figcaption>
-            </figure>
-
-            <figure>
-                <a href="Express.html">
-                    <img src="Images/Express-yellowBackground.png" alt="Express Logo">  
-                </a>
-                <figcaption>Express eCommerce</figcaption>
             </figure>
 
             <figure>
                 <a href="SkyCity.html">
                     <img src="Images/SkyCity-Wordmark-whiteTextGreyBackground.png" alt="Skycity Software Logo">    
                 </a> 
-                <figcaption>SkyCity Software</figcaption>
             </figure>
 
             <figure>
                 <a href="Pellino.html">
                     <img src="Images/Pellino-Responsive-whiteTextRedBackground.png" alt="Pellino Responsive Logo"> 
                 </a>  
-                <figcaption>Pellino Pasta</figcaption>
             </figure>
 
+            <figure>
+                <a href="Express.html">
+                    <img src="Images/Express-yellowBackground.png" alt="Export eCommerce Logo">  
+                </a>
+            </figure>
 
+            <figure>
+                <a href="arrow.html">
+                    <img src="Images/Arrow-Logo-Wordmark2.jpg" alt="Arrow Crypto Logo">    
+                </a> 
+            </figure>
         </section>
 
-
         <!-- End of MANUAL SCROLL GALLERY -->
-        <!-- ================================================================= -->
+        <section class="bottomOfIndexPage">
+            <p> <!-- Paragraph closing tag -->       
+                &emsp;
+            </p> <!-- Paragraph closing tag -->
+        </section>
 
-
-
-    <!-- ================================================================= -->
     <!-- Start of FOOTER -->
     <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
+        <div class="container" aria-label="footer container div">
+          <div class="row" aria-label="footer row div">
+            <div class="col-sm-12 col-md-6" aria-label="footer column div">
                 <h6>Let's talk about you</h6>
                 <p> <!-- Paragraph closing tag -->       
                     <a href="contact.html">Get in touch</a> <!-- button to go back to top -->
                 </p> <!-- Paragraph closing tag -->
             </div>
-  
-            <!--<div class="col-xs-6 col-md-3">
-              <h6>quick links</h6>
-              <ul class="footer-links">
-                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">cookie policy</a></li>
-                <li><a href="http://scanfcode.com/privacy-policy/">privacy notice</a></li>
-              </ul>
-            </div>-->
           </div>
-          <hr>
+        <hr>
         </div>
-        <div class="container">
-            <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">&copy; PWD 2022</p>
-            </div>
+        <div class="container" aria-label="footer container div">
+            <div class="row" aria-label="footer row div">
+                <div class="col-md-8 col-sm-6 col-xs-12" aria-label="footer column div">
+                    <p class="copyright-text">&copy; PWD 2022</p>
+                </div>
   
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                <!--<li><a class="instagram" href="https://www.instagram.com/pwdagency/" target="_blank"><i class="fa fa-instagram"></i></a></li>-->    
-
+            <div class="col-md-4 col-sm-6 col-xs-12" aria-label="footer column div">
+              <ul class="social-icons">   
                 <li><a class="linkedin" href="https://www.linkedin.com/in/patrickrobertwatson/" target="_blank"><i class="fa fa-linkedin"></i></a></li>   
-
-                <!--<li><a class="behance" href="https://www.behance.net/patrickwatson3" target="_blank"><i class="fa fa-behance"></i></a></li>-->
-
-                <!--<li><a class="tiktok" href="https://www.tiktok.com/@pwdagency" target="_blank"><i class="fa fa-tiktok"></i></a></li>-->
-
               </ul>
             </div>
           </div>
         </div>
     </footer>
     <!-- End of FOOTER -->
-    <!-- ================================================================= -->
-        <!-- ================================================================= -->
         <!-- START OF BACK-TO-TOP BUTTON -->
-        <div class="progress-bar">
+        <div class="progress-bar" aria-label="back to top div">
             <button class="back-to-top hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
               </svg>
             </button>
-            </div>
+        </div>
     
-            <!-- Javascript for BACK-TO-TOP BUTTON  -->
-    
+        <!-- Javascript for BACK-TO-TOP BUTTON  -->
             <script>
                 const showOnPx = 100;
                 const backToTopButton = document.querySelector(".back-to-top");
@@ -424,12 +392,8 @@
                 backToTopButton.addEventListener("click", goToTop);
     
             </script>
-            <!-- END OF BACK-TO-TOP BUTTON -->
-            <!-- ================================================================= -->
-    
-
+        <!-- END OF BACK-TO-TOP BUTTON -->
 </body> <!-- Closing body tag -->
-
 </html> <!-- closing html tag -->
 
 
